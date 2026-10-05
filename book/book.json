@@ -7,12 +7,12 @@
   "address": "152 Paya Lebar Road #02-06, Citipoint Industrial Complex, Singapore 409020",
   "contact": {
     "email": "resellercontact@hstmedical.com",
-    "website": "https://technextmarketing.github.io/hst-medical-website/",
+    "website": "https://technextsg.github.io/hst-medical-website/",
     "orderEmail": "resellercontact@hstmedical.com"
   },
   "shop": {
-    "productUrl": "https://technextmarketing.github.io/hst-medical-website/products/{slug}/",
-    "shopUrl": "https://technextmarketing.github.io/hst-medical-website/shop/",
+    "productUrl": "https://technextsg.github.io/hst-medical-website/products/{slug}/",
+    "shopUrl": "https://technextsg.github.io/hst-medical-website/shop/",
     "label": "View on the HST website",
     "_note": "productUrl/shopUrl point at the website prototype (test link). Swap to https://hstmedical.com/... when the new site goes live, then rebuild."
   },

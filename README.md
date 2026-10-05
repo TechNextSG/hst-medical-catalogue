@@ -4,7 +4,7 @@ An interactive flip-book of the HST Medical product sheets (54 pages: cover, Abo
 "Our Products" index), rebuilt from the Heyzine edition at <https://heyzine.com/flip-book/1cbc07dcc6.html>
 into a site we own. The reader engine is the one built for the nivellipso catalogue
 (technextmarketing/nivellipso-catalogue); the look follows the HST Medical website prototype
-(technextmarketing/hst-medical-website): white chrome, cool grey wells, logo magenta `#dd1860`, slate, Inter + Plus Jakarta Sans.
+(TechNextSG/hst-medical-website): white chrome, cool grey wells, logo magenta `#dd1860`, slate, Inter + Plus Jakarta Sans.
 
 **Status: unlisted test link** (`noindex`, `robots.txt` disallows all) until the client signs off.
 
