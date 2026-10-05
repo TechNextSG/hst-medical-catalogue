@@ -1,0 +1,800 @@
+{
+ "_readme": "Product cards, one per product page (page = real page number). Imported from the website prototype's _src/products.json by tools/import_pdf.py; edit freely, then run build_book.py.",
+ "products": [
+  {
+   "page": 3,
+   "slug": "rheuma-salve-balm",
+   "name": "Rheuma-Salve® Pain Relief Balm",
+   "tagline": "Extra-Strength Pain Relief Balm",
+   "description": "Formulated for superior penetration and efficacy, Rheuma-Salve Balm provides rapid relief from joint pains, muscle aches, and promotes blood circulation. Rheuma-Salve balm is a snowy white balm manufactured with a proprietary blend of premium European essential oils and pharmaceutical-grade ingredients.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Heritage Rheuma-Salve Balm",
+     "size": "50g",
+     "code": "410323"
+    },
+    {
+     "name": "Heritage Rheuma-Salve Balm (Value Pack)",
+     "size": "50g X 6",
+     "code": "111961"
+    },
+    {
+     "name": "Heritage Rheuma-Salve Balm",
+     "size": "20g",
+     "code": "113897"
+    },
+    {
+     "name": "Heritage Rheuma-Salve Balm (Twin Pack)",
+     "size": "20g X 2",
+     "code": "112487"
+    },
+    {
+     "name": "Heritage Rheuma-Salve Balm (Travel Value Pack)",
+     "size": "20g X 8",
+     "code": "112647"
+    }
+   ]
+  },
+  {
+   "page": 4,
+   "slug": "rheuma-salve-creme",
+   "name": "Rheuma-Salve® Crème",
+   "tagline": "Rapid & Deep Penetrating Pain Relief",
+   "description": "Rheuma-Salve Crème delivers rapid and deep penetrating pain relief at sore, tense, painful muscles and joints stemming from arthritis, bursitis, tendonitis and other conditions. It utilises a proprietary blend of premium quality essential oils and pharmaceutical grade ingredients that satisfy BP (British) & USP (USA) standards.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Heritage Rheuma-Salve Creme",
+     "size": "50g",
+     "code": "113057"
+    }
+   ]
+  },
+  {
+   "page": 5,
+   "slug": "rheuma-salve-liniment",
+   "name": "Rheuma-Salve® Liniment",
+   "tagline": "Roll-on Pain Relief",
+   "description": "Rheuma-Salve Liniment is a handy and convenient roll-on pain for on-the-spot pain relief for sudden onset of headache, giddiness, or motion-sickness. It also helps clear blocked nose and soothes insect bites. This roll-on can be carried around discreetly in the pocket, is easily absorbed, and is non-greasy.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Heritage Rheuma-Salve Liniment",
+     "size": "10ml",
+     "code": "113095"
+    },
+    {
+     "name": "Heritage Rheuma-Salve Liniment",
+     "size": "10ml X 6",
+     "code": "113453"
+    }
+   ]
+  },
+  {
+   "page": 6,
+   "slug": "rheuma-salve-pain-relief-patch-cool",
+   "name": "Rheuma-Salve® Pain Relief Patch (Cool)",
+   "tagline": "Experience rapid, cooling on-the-spot relief",
+   "description": "This proprietary formula leverages a synergistic blend of botanical extracts and essential oils to provide deep, cooling relief: • Peppermint Oil (6%): A natural analgesic for an immediate cooling and soothing sensation. • Menthol (5.8%): Delivers a targeted “fast relief” cooling effect, helping to dull pain signals in the affected area. • Centella Asiatica Leaf Extract (3%): Manages localised inflammation and supports circulation to ease muscle strain. • Hops Oil (1.5%): Enhances deep muscle comfort and combat inflammation. • Frankincense Oil (0.5%): Reduces joint swelling, ease muscle tension, and improve blood flow to accelerate recovery. • Myrrh Oil (0.5%): Blocks inflammation- causing chemicals and easing muscle stiffness. • Other Ingredients: Titanium Dioxide, Petrolatums, Resin. Contains Zinc Oxide for skin protection. Proprietary Formula The Rheuma-Salve® Pain Relief Patch Cool is a plaster that delivers fast-acting, “cool” sensation relief directly to the source of pain. Each pack contains 8 high-quality patches (10 cm x 7 cm), designed to be soft, flexible, and gentle on the skin for maximum comfort during wear. It is specifically engineered to address muscle aches, sprains, strains, joint pain, backaches, sports & active recovery from over-exertion, delayed onset muscle soreness (DOMS).",
+   "country": "",
+   "skus": [
+    {
+     "name": "Heritage Rheuma-Salve® Pain Relief Patch (Cool)",
+     "size": "8 pieces",
+     "code": "114375"
+    }
+   ]
+  },
+  {
+   "page": 7,
+   "slug": "rheuma-salve-medi-stick",
+   "name": "Rheuma-Salve® On-the-Go Medi-Stick",
+   "tagline": "On-the-Go Relief",
+   "description": "Made from 100% natural ingredients, the Rheuma- Salve® Medi-Stick is a convenient, travel-friendly, pocket-size pain relief remedy for muscle fatigue, tension and sports recovery. • Unique formula made from 100% high grade natural ingredients of Menthol, Wintergreen oil, Peppermint, Eucalyptus and Capsicum. Relieves pain with a cooling effect from menthol followed by a warming effect from capsicum to improve blood circulation. Wintergreen and Eucalyptus oils are essential oils with medicinal properties used for centuries to relieve muscle and joint pain and soreness, relax muscles and promotes blood circulation and oxygen flow • No chemicals, paragons, colouring, sulphates or synthetic fragrances making this product all-natural and safe for sensitive skin.* • Simply twist, apply, twist and replace cap. Easy to use no mess applicator with solid formula. No touching of the balm with hands. Complies with custom requirements. • Fits easily in the palm of your hands, in pockets or small carry-ons",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Heritage Rheuma-Salve Medi-Stick",
+     "size": "15g",
+     "code": "114016"
+    },
+    {
+     "name": "Heritage Rheuma-Salve Medi-Stick",
+     "size": "15g X 6",
+     "code": "114054"
+    }
+   ]
+  },
+  {
+   "page": 8,
+   "slug": "american-ginseng",
+   "name": "American Ginseng",
+   "tagline": "and Rejuvenate",
+   "description": "American Ginseng is highly favoured for its invigorating properties to improve endurance and enhance overall wellness. It is an excellent tonic to tonify qi, nourish yin, clear heat, and promote production of body fluid. It supports the immune system, revitalises physical energy and stamina, relieves physical & mental stress, and supports mental alertness.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Heritage American Ginseng",
+     "size": "60 Vegicaps",
+     "code": "111770"
+    }
+   ]
+  },
+  {
+   "page": 9,
+   "slug": "cordyceps-cs-4",
+   "name": "Cordyceps CS-4",
+   "tagline": "and Immunity",
+   "description": "Traditionally treasured for its tonic effects on various organ systems, cordyceps sinensis is one of the most sought after medicinal fungi in Traditional Chinese Medicine (TCM). It promotes recovery, restores energy after illness, and when taken regularly, relieves fatigue and enhances general well-being. It is highly nutritional and is cultivated under controlled parameters to yield a strain that closely resembles the wild Tibetan cordyceps sinensis used in TCM.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Heritage Cordyceps CS-4",
+     "size": "60 Vegicaps",
+     "code": "111756"
+    }
+   ]
+  },
+  {
+   "page": 10,
+   "slug": "deer-antler",
+   "name": "Deer Antler",
+   "tagline": "and Endurance",
+   "description": "This superior grade, 100% pure deer antler powder is ethically sourced from New Zealand. It serves as a traditional remedy for a weak body often afflicted with chills and numbness, joint aches, and back pains. It restores health and vitality, enhancing everyday physical performance, and endurance.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Heritage Deer Antler",
+     "size": "60 Vegicaps",
+     "code": "110018"
+    }
+   ]
+  },
+  {
+   "page": 11,
+   "slug": "korean-red-ginseng",
+   "name": "Korean Red Ginseng",
+   "tagline": "and Endurance",
+   "description": "Korean red ginseng or gao li shen is a distinctive product of Korea. Its process of cultivation, maturation and harvesting in Korea’s ideal soil and climatic conditions, averages 6 years. The Korean red ginseng is a rich source of ginsenosides, which tonifies the body system for energy, endurance, and mental alertness.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Heritage Korean Red Ginseng",
+     "size": "60 Vegicaps",
+     "code": "110063"
+    }
+   ]
+  },
+  {
+   "page": 12,
+   "slug": "lingzhi-cracked-spores",
+   "name": "Lingzhi Cracked Spores Plus",
+   "tagline": "Rejuvenate Energy and Vitality",
+   "description": "Heritage Lingzhi Cracked-Spores Plus is a daily herbal supplement designed to enhance overall well-being by providing increased energy and vitality. The product combines two powerful medicinal mushrooms: organic lingzhi cracked-spores and wild yunzhi concentrated extract. Organic lingzhi spores offer various health benefits, including strengthening the immune system, protecting the lungs, liver, and kidneys, as well as relieving chronic fatigue, chesty cough, shortness of breath, and lack of energy. The wild yunzhi extract contains active components such as polysaccharides peptides (PSP), known for supporting the immune system and providing relief from cough and wheezing.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Heritage Lingzhi Cracked-Spores Plus",
+     "size": "60 Vegicaps",
+     "code": "111558"
+    }
+   ]
+  },
+  {
+   "page": 13,
+   "slug": "deep-sea-squalene",
+   "name": "Deep Sea Squalene",
+   "tagline": "Immunity and Skin Health",
+   "description": "In 1906, Dr. Tsujimoto discovered the presence of highly unsaturated hydrocarbon in the liver of deep-sea sharks. Since then, extracted squalene has been introduced as a natural health supplement. Heritage Deep Sea Squalene is made of 99.9% unsaturated oil extracts from the shark’s liver. Squalene is a rich source of antioxidants, which exerts protective and healing functions and it also facilitates the supply of oxygen in the body systems. It strengthens the immune system, promotes healthy skin and enhances overall well-being.",
+   "country": "Made in Japan",
+   "skus": [
+    {
+     "name": "Heritage Deep Sea Squalene Softgels",
+     "size": "200 Softgels",
+     "code": "110049"
+    }
+   ]
+  },
+  {
+   "page": 14,
+   "slug": "pearl-powder",
+   "name": "Pure Medicinal Pearl Powder",
+   "tagline": "From The Inside Out",
+   "description": "Heritage Pure Medicinal Pearl Powder is processed stringently, and contains only 100% natural pearl powder—not a mixture of the inner oyster shells. It is sourced from medicinal pearls to ensure only the purest quality. Pearls are listed in the classics of Chinese medicine for their beauty and medicinal benefits that help revitalise the skin’s natural fairness and attractiveness.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Heritage Pure Medicinal Pearl Powder Capsules",
+     "size": "60 Vegicaps",
+     "code": "110001"
+    }
+   ]
+  },
+  {
+   "page": 15,
+   "slug": "shou-wu-hair-plus",
+   "name": "Shou Wu Hair Plus",
+   "tagline": "Hair Health",
+   "description": "• He Shou Wu & Wolfberry replenishes vital essence and nourishes blood to prevent premature hair loss and greying. • Chinese Angelica nourishes and improves blood circulation to provide nutrients to hair. • Ginseng increases blood circulation to scalp for healthy hair growth. • Cordyceps replenishes vital essence to nourish the scalp, deeply repairs, and strengthens weak, damaged hair. • Biotin, Silica, Zinc, B1 and B5 are key building blocks that promotes cell repair, regeneration and regrowth of strong, healthy hair. Shou Wu Hair Plus is an advanced formula which helps to prevent premature hair loss, greying and support strong and healthy hair due to stressful lifestyles, irregular diets, and hereditary issues.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Shou Wu Hair Plus Capsules",
+     "size": "80 Vegicaps",
+     "code": "110216"
+    }
+   ]
+  },
+  {
+   "page": 16,
+   "slug": "crocodile-pure-skin-oil",
+   "name": "Crocodile Pure Skin Oil",
+   "tagline": "Rejuvenate the Skin",
+   "description": "Since the times of the ancient Egyptians, crocodile oil has been used as a traditional natural remedy to heal and repair the skin. Heritage Crocodile Pure Skin Oil is derived from the fats of crocodiles farmed in Australia through responsible and sustainable methods. This lemon-scented crocodile oil contains several naturally occurring skin healing ingredients.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Heritage Crocodile Pure Skin Oil",
+     "size": "50ml",
+     "code": "113491"
+    }
+   ]
+  },
+  {
+   "page": 17,
+   "slug": "age-defying-nmn",
+   "name": "Age-Defying NMN Pearl & Collagen",
+   "tagline": "Tonic for Health & Skin Rejuvenation",
+   "description": "Heritage Age-Defying NMN has a unique all-in-one formula just for your skin. As we age, NAD+ (nicotinamide adenine dinucleotide) level decreases in our body. NMN (nicotinamide mononucleotide) helps to increase NAD+ level which supports stamina and energises our body, resulting in a youthful appearance and maintaining healthy eyes & cognitive abilities. Enriched with hydrolysed marine collagen, Heritage Age-Defying NMN decreases melanin and wrinkles while hydrating and promoting skin elasticity and firmness, leaving your skin smooth and supple. Fortified with L-glutathione, pearl powder and vitamin C, it brightens and revitalises the skin’s natural fairness to promote a radiant and luminous complexion from within.",
+   "country": "Made in Japan",
+   "skus": [
+    {
+     "name": "Heritage Age-Defying NMN Pearl & Collagen",
+     "size": "30 Sachets",
+     "code": "114191"
+    }
+   ]
+  },
+  {
+   "page": 18,
+   "slug": "gold-lion-rheumatic-oil",
+   "name": "Gold Lion Rheumatic Oil",
+   "tagline": "for Aches and Pains",
+   "description": "Heritage Gold Lion Rheumatic Oil is a natural remedy that is made from a traditional blend of oils with anti-inflammatory properties and a soothing fragrance. Heritage Gold Lion Rheumatic Oil effectively reduces joint, muscle, and rheumatic discomforts.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Heritage Gold Lion Rheumatic Oil",
+     "size": "60ml",
+     "code": "114009"
+    }
+   ]
+  },
+  {
+   "page": 19,
+   "slug": "safflower-red-flower-oil",
+   "name": "Safflower Red Flower Oil (Hung Far Oil)",
+   "tagline": "Muscle Cramp and Sprain",
+   "description": "A time-tested traditional blend with a soothing fragrance, Heritage Safflower Red Flower Oil contains anti-inflammatory properties that effectively reduce joint, muscle, and rheumatic discomforts. Its warming effects also provide fast relief for menstruation cramps and bloating. Specially designed with Singapore’s national flower, the Vanda Miss Joaquim Orchid on an auspicious red packaging, it makes a thoughtful gift for family and friends overseas.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Heritage Safflower Red Flower Oil",
+     "size": "60ml",
+     "code": "113910"
+    }
+   ]
+  },
+  {
+   "page": 20,
+   "slug": "qian-li-zhui-feng-oil",
+   "name": "Qian Li Zhui Feng Oil",
+   "tagline": "Joint Pain Relief",
+   "description": "A time-tested traditional blend, Heritage Qian Li Zhui Feng Oil is an all-natural muscle and joint rub that delivers rapid pain and soreness relief. It penetrates deeply into the tissue and reduces inflammation at affected areas. Specially designed with Singapore’s national flower, the Vanda Miss Joaquim Orchid on an auspicious orange packaging, it makes a thoughtful gift for family and friends overseas.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Heritage Qian Li Zhui Feng Oil",
+     "size": "60ml",
+     "code": "114030"
+    }
+   ]
+  },
+  {
+   "page": 21,
+   "slug": "zoo-vite-elderberry-gummies",
+   "name": "Zoo-Vite® “Perky Penguin” Elderberry Gummies",
+   "tagline": "Immunity Support",
+   "description": "Zoo-Vite Elderberry Gummies contains antioxidant- packed elderberries and are fortified with vitamin c & zinc to further boost your child’s immune system, protecting your child all year round. These great tasting vegan gummies are made with 100% natural berry flavour, with no artificial preservatives, no artificial sweeteners, no artificial colours, and no animal gelatin.",
+   "country": "Made in USA",
+   "skus": [
+    {
+     "name": "Zoo-Vite Elderberry Gummies",
+     "size": "60 Gummies",
+     "code": "113606"
+    }
+   ]
+  },
+  {
+   "page": 22,
+   "slug": "zoo-vite-lutein-jelly",
+   "name": "Zoo-Vite® “Inspector Charley” Lutein Jelly",
+   "tagline": "Optimal Eye Health",
+   "description": "Zoo-Vite Lutein Jelly provides nutritional support for healthy eyes and clear vision. It contains lutein and powerful antioxidant extracts from berries as well as vitamins A, B1, B2 and B6 to maintain visual acuity and to promote eye health. They are free from artificial preservatives, artificial sweeteners, artificial colours, gelatin, yeast and gluten. These great tasting passion fruit jellies make nutritional supplementation fun and easy for kids.",
+   "country": "Made in Taiwan",
+   "skus": [
+    {
+     "name": "Zoo-Vite Lutein Jelly",
+     "size": "30 Sticks",
+     "code": "114207"
+    }
+   ]
+  },
+  {
+   "page": 23,
+   "slug": "zoo-vite-multivitamin-gummies",
+   "name": "Zoo-Vite® “Safari Buddies” Multivitamin Gummies",
+   "tagline": "Supports Healthy Growth and Development",
+   "description": "Zoo-Vite Multivitamin Gummies provide kids with a healthy head start for growth and development. These great tasting gummies made with 100% natural fruit flavour contain 13 essential vitamins and minerals and comes in fun gummy bear shapes. Zoo-Vite Multivitamin Gummies are free from artificial flavours, artificial colours, artificial preservatives, artificial sweeteners, animal gelatin, wheat (gluten), diary, peanuts, tree nuts and has sugar-free coating.",
+   "country": "Made in USA",
+   "skus": [
+    {
+     "name": "Zoo-Vite Multivitamin Gummies",
+     "size": "60 Gummies",
+     "code": "112494"
+    }
+   ]
+  },
+  {
+   "page": 24,
+   "slug": "zoo-vite-immune-jelly",
+   "name": "Zoo-Vite® “Super Panda” Immune Jelly",
+   "tagline": "Immunity Boost",
+   "description": "Zoo-Vite Super Panda Immune Jelly provides nutritional support to maintain healthy immune system. It contains perilla seed extract which helps to strengthen immune system. Enhanced with probiotics, vitamins C, E and zinc to further build body’s defences against free radicals These great tasting strawberry jellies make nutritional supplementation fun and easy for kids.",
+   "country": "Made in Taiwan",
+   "skus": [
+    {
+     "name": "Zoo-Vite Immune Jelly",
+     "size": "30 Sticks",
+     "code": "112630"
+    }
+   ]
+  },
+  {
+   "page": 25,
+   "slug": "zoo-vite-dha-jelly",
+   "name": "Zoo-Vite® “Professor Skippy” DHA Jelly",
+   "tagline": "Supports Brain & Eye Functions",
+   "description": "Zoo-Vite DHA Jelly provides pure algal DHA fatty acid to promote cognitive performance and visual function. It is fortified with wolfberry and bilberry for good vision. Made with 100% natural fruit flavour, and free from artificial colours, artificial preservatives, animal gelatin, yeast, gluten and starch, these great tasting tropical mix jellies make nutritional supplementation fun and easy for kids. These great tasting tropical mix jellies make nutritional supplementation fun and easy for kids.",
+   "country": "Made in Taiwan",
+   "skus": [
+    {
+     "name": "Zoo-Vite DHA Jelly",
+     "size": "30 Sticks",
+     "code": "112869"
+    }
+   ]
+  },
+  {
+   "page": 26,
+   "slug": "alievaid-herbal-drops",
+   "name": "Alievaid Herbal Drops",
+   "tagline": "Cough & Sore Throat Relief",
+   "description": "Formulated with a natural herbal blend of loquat leaf, jie geng, luo han guo & cordyceps, and fortified with antibacterial properties, Alievaid Herbal Drops helps soothe minor throat infections and discomfort, and relieves irritating cough. It has a strong refreshing and cooling mint sensation to help freshen breath and clear nasal airway.",
+   "country": "Made in Malaysia",
+   "skus": [
+    {
+     "name": "Alievaid Herbal Drops",
+     "size": "12 Lozenges",
+     "code": "114092"
+    }
+   ]
+  },
+  {
+   "page": 27,
+   "slug": "cough-alievaid-herbal-lintus",
+   "name": "Cough Alievaid Herbal Lintus",
+   "tagline": "Cough Relief",
+   "description": "An effective herbal remedy for cough and the associated symptoms, it is formulated using traditional Chinese herbs that act in synergy to alleviate cough and fortify the body’s defence mechanisms. Its formula is also non-drowsy, alcohol free and sugar-free. Provides symptomatic relief from cough, sore throat and congestion caused by phlegm. Suitable for both adults and children.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Cough Alievaid Herbal Lintus",
+     "size": "120 ml",
+     "code": "111619"
+    }
+   ]
+  },
+  {
+   "page": 28,
+   "slug": "flu-gard",
+   "name": "Flu Gard Herbal Remedy",
+   "tagline": "Cold and Flu Relief",
+   "description": "Flu Gard is 100% herbal and is based on a safe traditional Chinese medicine formula indicated for common cold & flu symptoms. It reduces fever, eases body aches, runny nose & sneezing, relieves cough, reduces phlegm , and detoxifies the respiratory system.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Flu Gard Herbal Remedy",
+     "size": "30 Vegicaps",
+     "code": "113415"
+    }
+   ]
+  },
+  {
+   "page": 29,
+   "slug": "ivy-leaf-cough-syrup",
+   "name": "Ivy Leaf Cough Syrup",
+   "tagline": "with Immunity Support",
+   "description": "Ivy Leaf Cough Syrup is a natural formula to reduce coughing, soothe airways and clear mucus and phlegm for effective congestion and cough relief. It is non-drowsy, sugar-free, alcohol-free, has no added colouring, and comes in a pleasant natural blackcurrant flavour. Fortified with 3.5 billion lactobacilli per sachet for additional immunity support (probiotics are Lactobacillus Paracasei MCC1849 from Japan). Convenient and travel- friendly individual sachets for on-the-go cough relief.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Ivy Leaf Cough Syrup",
+     "size": "10ml x 12 Sachets",
+     "code": "113729"
+    }
+   ]
+  },
+  {
+   "page": 30,
+   "slug": "ivy-leaf-drops",
+   "name": "Ivy Leaf Drops",
+   "tagline": "Cough & Sore Throat Relief",
+   "description": "Formulated with natural ivy leaf extracts and antibacterial property, Ivy Leaf Drops help to relieve chesty cough, nasal congestion, and minor throat infections. It has a natural mint flavour to soothe respiratory tract, giving it a pleasant and lasting feeling of freshness.",
+   "country": "Made in Malaysia",
+   "skus": [
+    {
+     "name": "Ivy Leaf Drops",
+     "size": "12 Lozenges",
+     "code": "114108"
+    }
+   ]
+  },
+  {
+   "page": 31,
+   "slug": "sinus-clear-2-in-1",
+   "name": "Sinus Clear 2-in-1 Nasal Inhaler",
+   "tagline": "and Headaches",
+   "description": "An innovative 2 in 1 design combines an applicator and inhaler, serving two different needs in a small pocket-friendly lipstick-sized container, topped off with a key chain. Comprising of a detachable top and bottom component, the top serves as a refillable inhaler to provide relief from blocked and congested noses. The bottom component acts as both an temple applicator for headaches as well as a refill for the inhaler. Just a few drops from the applicator to the inhaler’s cotton stick allows it to be used again. Useful for those who have a cold, headache or both at the same time.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Sinus Clear 2 in 1 Nasal Inhaler",
+     "size": "2 ml",
+     "code": "114023"
+    }
+   ]
+  },
+  {
+   "page": 32,
+   "slug": "arthro-gard",
+   "name": "Arthro Gard Advanced Formula",
+   "tagline": "Joint Mobility Support",
+   "description": "Arthro Gard Advanced Formula provides triple action to increase flexibility and mobility, support healthy joint cartilage production and maintain muscle strength to reduce strain on joint. Glucosamine, chondroitin and collagen type 2 make up the essential building blocks in the formation of joint cartilage — where healthy ones promote flexibility. Hyaluronic acid and chondroitin aids smooth movement and relieve stiffness. Methylsulfonylmethane (MSM), boswellia serrata 80% and CurQlife turmeric extract are potent anti-inflammatory agents which help to reduce pain, swelling and protects cartilage in joints which reduces joint stiffness and discomfort, thus improving quality of life. Arthro Gard Advanced Formula contains no artificial preservatives, no artificial colours, no artificial flavours, and is free from sodium, yeast, sugar, starch, gluten & GMO",
+   "country": "Made in USA",
+   "skus": [
+    {
+     "name": "Arthro Gard Advanced Formula",
+     "size": "90 Vegicaps",
+     "code": "112555"
+    }
+   ]
+  },
+  {
+   "page": 33,
+   "slug": "curqmax",
+   "name": "CurQmax Turmeric-Boswellia Complex",
+   "tagline": "Joint Pain and Inflammation Relief",
+   "description": "CurQmax is a patented extract of curcumin & boswellia. It is a potent anti-inflammatory agent which reduces pain & swelling and protects the joints from damage and degeneration. It modulates inflammation by reducing and regulating production of pro-inflammatory enzymes. The unique properties of CurQmax allow for a 11-fold increase in curcumin bioavailability into the body which the body can utilise for a wide range of anti-inflammatory applications. It contains no artificial preservatives, no artificial colours, no artificial flavours and is free from yeast, sugar, starch, wax and salt.",
+   "country": "Made in USA",
+   "skus": [
+    {
+     "name": "CurQmax Tumeric-Boswellia Complex",
+     "size": "60 Vegicaps",
+     "code": "113347"
+    }
+   ]
+  },
+  {
+   "page": 34,
+   "slug": "maxi-cal",
+   "name": "Maxi-Cal",
+   "tagline": "for Bone Health",
+   "description": "Maxi-Cal is coral calcium in a vegetarian softgel and in liquid form to allow easy swallowing and faster absorption. It has been formulated with essential vitamin D to further enhance the uptake of calcium, and is free artificial preservatives, artificial colours, artificial flavours, and free from sodium, yeast, sugar, starch, gluten, & GMO. An essential element that maintains strong and healthy teeth and bones, muscles and nervous system, calcium is particularly important for growing children, pregnant and lactating women as well as for people with active lifestyles.",
+   "country": "Made in Japan",
+   "skus": [
+    {
+     "name": "Maxi-Cal",
+     "size": "180 Vegi Softgels",
+     "code": "110452"
+    }
+   ]
+  },
+  {
+   "page": 35,
+   "slug": "vitamin-d3-k2",
+   "name": "Vitamin D3 + K2",
+   "tagline": "Bone Health Support",
+   "description": "Vitamin D3 uses Vitamin K2 (Menaquinone-7), a bioactive form of Vitamin K2 which can be easily absorbed by our body. It is essential for promoting the absorption of calcium and phosphorus from our digestive tract. Both elements are vital in the formation, growth and maintenance of strong and healthy bones and teeth. They are particularly important for growing children, pregnant and lactating women, as well as for people with active lifestyles.",
+   "country": "Made in USA",
+   "skus": [
+    {
+     "name": "Vitamin D3 + K2",
+     "size": "100 Capsules",
+     "code": "114160"
+    }
+   ]
+  },
+  {
+   "page": 36,
+   "slug": "algaomega",
+   "name": "AlgaOmega",
+   "tagline": "Plant-based EPA & DHA",
+   "description": "AlgaOmega is derived from sustainably sourced Schizochytrium sp., a marine microalgae which produces plant-based EPA and DHA. Through an environmentally responsible process of cultivation and purification, it bears a consistently pure, naturally potent and effective ingredient for human nutrition. Using patented life’s®OMEGA 60 algae with Vitamin D and E, it supports optimal cognitive function and eye health, along with cardiovascular functionality and joint mobility.",
+   "country": "Made in Japan",
+   "skus": [
+    {
+     "name": "AlgaOmega",
+     "size": "60 Mini Softgels",
+     "code": "113958"
+    }
+   ]
+  },
+  {
+   "page": 37,
+   "slug": "clear-eyes-plus",
+   "name": "Clear Eyes Plus",
+   "tagline": "Eye Health",
+   "description": "Clear Eye Plus is specially formulated with a combination of premium Chinese herbs and phytonutrients vitamin A, zinc, lutein, zeaxanthin and bilberry, to help maintain healthy eyes & vision, relieve eye fatigue, and support night vision. Recommended for individuals who experience eye strain, dryness, redness and blurred vision from prolonged digital screen time on laptop, computers, and smart phones.",
+   "country": "Formulated and Packed in Singapore (GMP Certified Facility)",
+   "skus": [
+    {
+     "name": "Clear Eyes Plus",
+     "size": "60 Vegicaps",
+     "code": "113552"
+    }
+   ]
+  },
+  {
+   "page": 38,
+   "slug": "dha-600",
+   "name": "DHA 600",
+   "tagline": "Nutrient for Brain, Eyes & Nerves",
+   "description": "DocosaHexaenoic Acid or DHA is the most abundant omega-3 fatty acid in the brain and retina of the eye, and remains vital for brain and eye development and function, and heart health throughout life. DHA 600 is suitable for babies, children and adults. In babies and children, it supports brain, spinal cord, nerves and vision developments, healthy learning, memory and behavior and overall growth and development. In adults, DHA 600 promotes memory and cognitive health, supports eye health and reduces risk for age- related vision problems, supports heart health, and reduces risk of cardiovascular disease, and lowers triglyceride levels if combined with appropriate diet and lifestyle. It contains molecularly distilled fish oil with dioxins, PCBs and heavy metals removed, based on stringent pharmaceutical standards. It has no artificial preservatives, no artificial colours, no artificial flavours, is free from yeast, sugar, starch, gluten, wax, and cholesterol.",
+   "country": "Made in Spain",
+   "skus": [
+    {
+     "name": "DHA 600",
+     "size": "90 Softgels",
+     "code": "110353"
+    }
+   ]
+  },
+  {
+   "page": 39,
+   "slug": "fish-oil-minigels",
+   "name": "Fish Oil Minigels High Strength Omega-3",
+   "tagline": "High Strength Omega-3",
+   "description": "Adequate intake of omega-3 essential fatty acids provide numerous health benefits for the heart, brain, eyes and skin. EPA is essential for maintaining a healthy heart, healthy inflammation management, blood circulation and cholesterol levels while DHA plays an integral role in supporting healthy brain and eye function. As a whole, essential fatty acids reduce inflammation and joint swelling. Small & easy to swallow, each 300mg of fish oil mini soft gels delivers purely 180mg of EPA and 120mg of DHA, without any fillers. Fish Oil Minigels provides concentrated high quality and high strength omega-3 EPA and DHA using patented Omegatec®, a line of premium quality marine triglycerides sustainably sourced from GMO-free wild deep sea fishes such as mackerel and tuna, that are especially rich in omega-3 fatty acids. The process to extract, purify and concentrate the fish oil is environmentally friendly and creates zero waste. They contain no artificial preservatives, artificial colours, artificial flavours, starch, yeast, gluten or wax.",
+   "country": "Made in Spain",
+   "skus": [
+    {
+     "name": "Fish Oil Minigels",
+     "size": "320 Mini Softgels",
+     "code": "113804"
+    }
+   ]
+  },
+  {
+   "page": 40,
+   "slug": "max-omega",
+   "name": "Max-Omega High Potency Omega-3 with D3",
+   "tagline": "High Potency Omega-3 with Vitamin D3",
+   "description": "Max-Omega mini fish oil softgels provide high potency omega-3 EPA and DHA fatty acids (in triglyceride form) and vitamin D3 (cholecalciferol) which are crucial for human health, in smaller than standard size softgels for easy swallowing. This fish oil was molecularly distilled to remove dioxins, PCBs and heavy metals based on stringent pharmaceutical standards.",
+   "country": "Made in Spain",
+   "skus": [
+    {
+     "name": "Max-Omega",
+     "size": "120 Mini Softgels",
+     "code": "112821"
+    }
+   ]
+  },
+  {
+   "page": 41,
+   "slug": "neuro-gard",
+   "name": "Neuro Gard Ginkgo Biloba + B Vitamins",
+   "tagline": "Brain & Nerve Health",
+   "description": "Neuro Gard combines a standardised extract of gingko biloba with essential B vitamins and minerals to improve micro-circulation at the targeted sites, supporting mental alertness and healthy nerve functions.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Neuro Gard",
+     "size": "60 Vegicaps",
+     "code": "111671"
+    }
+   ]
+  },
+  {
+   "page": 42,
+   "slug": "magnesium-glycinate",
+   "name": "Magnesium Glycinate",
+   "tagline": "Daily Health",
+   "description": "HST Medical® Magnesium Glycinate is a combination of elemental magnesium with the amino acid glycine. This form of magnesium is highly bioavailable, enabling more efficient absorption through the small intestines. HST Medical® Magnesium Glycinate supports heart, nerve, muscle and bone health, promoting physical relaxation and improves sleep quality.",
+   "country": "Made in USA",
+   "skus": [
+    {
+     "name": "Magnesium Glycinate",
+     "size": "60 Vegicaps",
+     "code": "114351"
+    }
+   ]
+  },
+  {
+   "page": 43,
+   "slug": "melatonin-5mg",
+   "name": "Melatonin 5mg",
+   "tagline": "Sleep Health",
+   "description": "Pharmaceutical grade Melatonin is a drug free and 100% vegetarian supplement for occasional sleeplessness. Melatonin helps in regulating sleep & wake cycles to promote a more restful sleep, resulting in better overall health. It also regulates other hormones and maintains the body’s natural circadian rhythm.",
+   "country": "Made in USA",
+   "skus": [
+    {
+     "name": "Melatonin 5mg",
+     "size": "30 Vegicaps",
+     "code": "113194"
+    }
+   ]
+  },
+  {
+   "page": 44,
+   "slug": "sleep-aid-melatonin-10mg",
+   "name": "Sleep Aid Melatonin 10mg",
+   "tagline": "Sleep Health",
+   "description": "Pharmaceutical grade Sleep Aid Melatonin 10mg is a fast-acting drug free sleep aid which helps to regulate sleep-wake cycles, resulting in better overall health. Melatonin supports better sleep quality and increases sleep time for people with altered sleeping schedules like shift work and jet lag. This formulation is added with magnesium to support healthy muscle functions and to encourage relaxation. It also has L-theanine to support alpha- wave production within the brain, relaxing the mind and inducing calmness for better sleep quality. Sleep Aid Melatonin 10mg contains no artificial preservatives, colours, sugar, starch, gluten, or wax.",
+   "country": "Made in USA",
+   "skus": [
+    {
+     "name": "Sleep Aid Melatonin 10mg",
+     "size": "30 Vegicaps",
+     "code": "113972"
+    }
+   ]
+  },
+  {
+   "page": 45,
+   "slug": "sleep-fast-melatonin-gummies",
+   "name": "Sleep Fast Melatonin Gummies 5mg",
+   "tagline": "Sleep Health",
+   "description": "Sleep Fast Melatonin Gummies contain pharmaceutical grade melatonin which is a fast-acting drug free sleep aid to promote natural and quality sleep, resulting in better overall health. Melatonin helps regulate body’s internal clock and control your sleep and wake cycles. It inhibits melanin formation and increases sleep time for people with altered sleeping routines due to busy schedules. Sleep Fast Melatonin Gummies relax your mind, leaving you feel regenerated and refreshed upon waking up. Contains no artificial preservatives, colours, starch, or gluten.",
+   "country": "Made in USA",
+   "skus": [
+    {
+     "name": "Sleep Fast Melatonin Gummies 5mg",
+     "size": "60 Gummies",
+     "code": "114078"
+    }
+   ]
+  },
+  {
+   "page": 46,
+   "slug": "boost-immune",
+   "name": "Boost Immune C1000mg + Bs + D3 + Zinc",
+   "tagline": "Daily Health with C +Bs + D3 + Zinc",
+   "description": "Boost immune provides 1000 mg of Vitamin C along with vitamin Bs, vitamin D3 and zinc — essential nutrients and powerful antioxidants to fortify your immune system, reduce incidence of cold and flu, shield against cell damage and aid in wound healing, and tissue repair.",
+   "country": "Made in Korea",
+   "skus": [
+    {
+     "name": "Boost Immune (Effervescent Tablets)",
+     "size": "48 Effervescent Tablets",
+     "code": "112562"
+    }
+   ]
+  },
+  {
+   "page": 47,
+   "slug": "c-rosehips",
+   "name": "C+ Rosehips Time Release",
+   "tagline": "Daily Health with Collagen Booster",
+   "description": "Vitamin C is an essential nutrient and plays multiple roles to support and maintain overall health and total well-being. Vitamin C works as a potent water-soluble antioxidant and co-factor for many enzymes in the body. The human body is not able to make or store vitamin C, making it important to consume sufficient amounts through food and dietary supplements. HST Medical Time Release C provides 1000mg of vitamin C with rosehips. The time release system delivers small amounts of vitamin C over an extended time for better absorption by the body. Plant polyphenols in rosehips further enhance the benefits of vitamin C.",
+   "country": "Made in USA",
+   "skus": [
+    {
+     "name": "C+ Rosehips Time Release",
+     "size": "90 Time-released Tablets",
+     "code": "113866"
+    }
+   ]
+  },
+  {
+   "page": 48,
+   "slug": "therra-m",
+   "name": "Therra-M Multi-Vitamin with Minerals",
+   "tagline": "for Daily Health",
+   "description": "Therra-M is a comprehensive A to Z formula containing vitamins and minerals essential for the daily metabolic needs of the body. The nutrients in Therra-M provide nutritional support for maintaining general well-being and vitality.",
+   "country": "Made in USA",
+   "skus": [
+    {
+     "name": "Therra-M Multi-Vitamin with Minerals",
+     "size": "90 Tablets",
+     "code": "113811"
+    }
+   ]
+  },
+  {
+   "page": 49,
+   "slug": "synbioten",
+   "name": "Synbioten Probiotics + Prebiotics + Enzyme",
+   "tagline": "Prebiotics and Enzyme",
+   "description": "The human digestive tract contains a multitude of good bacteria working in tandem to promote optimal health. Synbioten combines the best of probiotics, prebiotics and enzymes to enhance gut health.",
+   "country": "Made in USA",
+   "skus": [
+    {
+     "name": "Synbioten",
+     "size": "30 Vegicaps",
+     "code": "113576"
+    }
+   ]
+  },
+  {
+   "page": 50,
+   "slug": "libi-max",
+   "name": "Libi-Max",
+   "tagline": "for Men’s Health",
+   "description": "This product is specially developed for men through a unique blend of herbal extracts. Each Libi-Max tablet provides a potent source of ingredients formulated to enhance vitality, strength, stamina and to support a healthy prostate function and overall well-being.",
+   "country": "Made in USA",
+   "skus": [
+    {
+     "name": "Libi-Max",
+     "size": "90 Tablets",
+     "code": "113392"
+    }
+   ]
+  },
+  {
+   "page": 51,
+   "slug": "liver-gard-forte",
+   "name": "Liver Gard Forte",
+   "tagline": "Liver Health",
+   "description": "The liver is the primary detoxification organ and plays a vital role in maintaining overall health and well-being. Modern lifestyle and dietary habits can lead to an overloaded and stressed liver. HST Medical Liver Gard Forte is formulated to support healthy liver functions: • Promotes detoxification and elimination of harmful substances • Supports repair and renewal of liver cells • Accelerates recovery from overconsumption of alcohol • Protects against cellular damage by free radicals",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Liver Gard Forte",
+     "size": "60 Vegicaps",
+     "code": "112692"
+    }
+   ]
+  },
+  {
+   "page": 52,
+   "slug": "uri-gard",
+   "name": "Uri Gard Herbal Formula",
+   "tagline": "Cleanses & protects urinary system",
+   "description": "This herbal formula detoxifies, cleanses, and protects the kidneys, bladder and urinary tract.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "Uri Gard",
+     "size": "80 Vegicaps",
+     "code": "111282"
+    }
+   ]
+  },
+  {
+   "page": 53,
+   "slug": "womens-choice",
+   "name": "Women’s Choice",
+   "tagline": "Women’s Health",
+   "description": "A premium, multi-action formula combining 14 potent TCM extracts with essential Western nutrients to support women’s health across all life stages—from menstrual regularity to menopausal transition.",
+   "country": "Made in Singapore",
+   "skus": [
+    {
+     "name": "HST Women’s Choice",
+     "size": "60 Vegicaps",
+     "code": "114337"
+    }
+   ]
+  }
+ ]
+}

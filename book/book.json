@@ -1,0 +1,98 @@
+{
+  "_readme": "EDIT THIS FILE to change the book. Page numbers are the real PDF page numbers (1-54). After editing, run: python tools/build_book.py",
+  "title": "Product Sheets",
+  "edition": "Health · Wellness · Beauty",
+  "brand": "HST Medical",
+  "publisher": "HST Medical Pte Ltd, a Kowa subsidiary",
+  "address": "152 Paya Lebar Road #02-06, Citipoint Industrial Complex, Singapore 409020",
+  "contact": {
+    "email": "resellercontact@hstmedical.com",
+    "website": "https://technextmarketing.github.io/hst-medical-website/",
+    "orderEmail": "resellercontact@hstmedical.com"
+  },
+  "shop": {
+    "productUrl": "https://technextmarketing.github.io/hst-medical-website/products/{slug}/",
+    "shopUrl": "https://technextmarketing.github.io/hst-medical-website/shop/",
+    "label": "View on the HST website",
+    "_note": "productUrl/shopUrl point at the website prototype (test link). Swap to https://hstmedical.com/... when the new site goes live, then rebuild."
+  },
+  "settings": {
+    "flipSound": true,
+    "startPage": 1,
+    "indexPages": [54],
+    "hideInBookMode": [],
+    "_indexPages": "Pages that list products (the 'Our Products' back page): every product line becomes a link to its product sheet."
+  },
+  "front": [["Cover", 1], ["About HST Medical", 2]],
+  "back": [["Our products (index)", 54]],
+  "pageLabels": {
+    "1": "Cover",
+    "2": "About HST Medical",
+    "54": "Our products (index)"
+  },
+  "chapters": [
+    {"no": "01", "title": "Pain Relief", "page": 3, "sections": [
+      ["Heritage Rheuma-Salve Balm", 3],
+      ["Heritage Rheuma-Salve Creme", 4],
+      ["Heritage Rheuma-Salve Liniment", 5],
+      ["Heritage Rheuma-Salve Pain Relief Patch (Cool)", 6],
+      ["Heritage Rheuma-Salve Medi-Stick", 7]]},
+    {"no": "02", "title": "Energy & Immunity", "page": 8, "sections": [
+      ["Heritage American Ginseng Capsules", 8],
+      ["Heritage Cordyceps CS-4 Capsules", 9],
+      ["Heritage Deer Antler Capsules", 10],
+      ["Heritage Korean Red Ginseng Capsules", 11],
+      ["Heritage Lingzhi Cracked-Spores Plus Capsules", 12]]},
+    {"no": "03", "title": "Beauty & Wellness", "page": 13, "sections": [
+      ["Heritage Deep Sea Squalene Softgels", 13],
+      ["Heritage Pure Medicinal Pearl Powder Capsules", 14],
+      ["Shou Wu Hair Plus Capsules", 15],
+      ["Heritage Crocodile Pure Skin Oil", 16],
+      ["Heritage Age-Defying NMN Pearl & Collagen", 17]]},
+    {"no": "04", "title": "Traditional Pain Relief", "page": 18, "sections": [
+      ["Heritage Gold Lion Rheumatic Oil", 18],
+      ["Heritage Safflower Red Flower Oil (Hung Far Oil)", 19],
+      ["Heritage Qian Li Zhui Feng Oil", 20]]},
+    {"no": "05", "title": "Kids Supplements", "page": 21, "sections": [
+      ["Zoo-Vite “Perky Penguin” Elderberry Gummies", 21],
+      ["Zoo-Vite “Inspector Charley” Lutein Jelly", 22],
+      ["Zoo-Vite “Safari Buddies” Multivitamin Gummies", 23],
+      ["Zoo-Vite “Super Panda” Immune Jelly", 24],
+      ["Zoo-Vite “Professor Skippy” DHA Jelly", 25]]},
+    {"no": "06", "title": "Cough, Cold & Flu", "page": 26, "sections": [
+      ["Alievaid Herbal Drops", 26],
+      ["Cough Alievaid Herbal Lintus", 27],
+      ["Flu Gard Herbal Remedy", 28],
+      ["Ivy Leaf Cough Syrup", 29],
+      ["Ivy Leaf Drops", 30],
+      ["Sinus Clear 2 in 1 Nasal Inhaler", 31]]},
+    {"no": "07", "title": "Bones & Joints", "page": 32, "sections": [
+      ["Arthro Gard Advanced Formula", 32],
+      ["CurQmax Turmeric-Boswellia Complex", 33],
+      ["Maxi-Cal", 34],
+      ["Vitamin D3+K2", 35]]},
+    {"no": "08", "title": "Alertness, Memory & Vision", "page": 36, "sections": [
+      ["AlgaOmega", 36],
+      ["Clear Eyes Plus", 37],
+      ["DHA 600", 38],
+      ["Fish Oil Minigels", 39],
+      ["Max-Omega", 40],
+      ["Neuro Gard", 41]]},
+    {"no": "09", "title": "Stress, Anxiety & Sleep", "page": 42, "sections": [
+      ["Magnesium Glycinate", 42],
+      ["Melatonin 5mg", 43],
+      ["Sleep Aid Melatonin 10mg", 44],
+      ["Sleep Fast Melatonin Gummies 5mg", 45]]},
+    {"no": "10", "title": "Immunity & Allergy", "page": 46, "sections": [
+      ["Boost Immune (Effervescent Tablets)", 46],
+      ["C+ Rosehips Time Release", 47],
+      ["Therra-M Multi-Vitamin with Minerals", 48],
+      ["Synbioten", 49]]},
+    {"no": "11", "title": "Heart, Liver, Uri & Vitality", "page": 50, "sections": [
+      ["Libi-Max", 50],
+      ["Liver Gard Forte", 51],
+      ["Uri Gard", 52],
+      ["Women’s Choice", 53]]}
+  ],
+  "hotspots": []
+}
