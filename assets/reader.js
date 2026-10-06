@@ -18,6 +18,9 @@
   const icon = id => `<svg><use href="#i-${id}"/></svg>`;
   const mqNarrow = matchMedia('(max-width: 760px)');
   const mqOverlay = matchMedia('(max-width: 1180px)');
+  // phones read the sheets as one scrolling column - no flip-book, no view switcher (tablets and desktop keep all views)
+  const mqPhone = matchMedia('(max-width: 760px), (pointer: coarse) and (max-height: 500px)');
+  const phone = () => mqPhone.matches;
   const finePointer = matchMedia('(hover: hover) and (pointer: fine)').matches;
   const isTouch = matchMedia('(hover: none)').matches;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -984,7 +987,7 @@
   }
 
   const writeHash = debounce(() => {
-    const h = `#p=${S.page}${S.view !== 'book' ? '&v=' + S.view : ''}`;
+    const h = `#p=${S.page}${S.view !== 'book' && !phone() ? '&v=' + S.view : ''}`;
     if (location.hash !== h) history.replaceState(null, '', h);
     store.set('lastPage', S.page);
   }, 250);
@@ -1033,9 +1036,10 @@
 
   // ------------------------------------------------------------------ views
   function setView(v, { page = S.page } = {}) {
+    if (phone()) v = 'scroll';
     if (Zoom.open) Zoom.close();
     S.view = v;
-    store.set('view', v);
+    if (!phone()) store.set('view', v);
     el.viewBook.hidden = v !== 'book';
     el.viewScroll.hidden = v !== 'scroll';
     el.viewGrid.hidden = v !== 'grid';
@@ -1574,6 +1578,10 @@
       sideShift();
     }, 90);
     new ResizeObserver(onResize).observe(el.stage);
+    mqPhone.addEventListener('change', () => {
+      el.app.classList.toggle('phone', phone());
+      setView(phone() ? 'scroll' : store.get('view', 'book'));
+    });
     Zoom.bind();
     bindRail();
   }
@@ -1622,12 +1630,13 @@
     const start = h.p || cfg.settings.startPage || 1;
     S.page = start;
     S.visible = [start];
-    const view = h.v || store.get('view', 'book');
+    const view = phone() ? 'scroll' : (h.v || store.get('view', 'book'));
+    el.app.classList.toggle('phone', phone());
 
     // image tier is chosen once from the real stage: on-screen page width x device pixel ratio
     const sr = el.stage.getBoundingClientRect();
     const pageCss = Math.min(sr.width / 2, Math.max(200, sr.height - 56) * S.PW / S.PH);
-    Images.hi = pageCss * (window.devicePixelRatio || 1) > 1250;
+    Images.hi = phone() ? scrollUrl(start) === imgUrl(start) : pageCss * (window.devicePixelRatio || 1) > 1250;
     // no lazy loading: every book page is requested now, nearest to the opening page first
     const si = Book.indexOf(start);
     Images.preloadAll(Book.pages.slice().sort((a, b) => Math.abs(Book.indexOf(a) - si) - Math.abs(Book.indexOf(b) - si)));
@@ -1645,7 +1654,8 @@
     if (!h.p && last && last > 3 && last <= S.N) setTimeout(() => toast(`Continue where you left off — p. ${last}`, 'Continue', () => goTo(last), 8000), 900);
     if (!store.get('coachSeen', false)) {
       el.coach.hidden = false;
-      if (isTouch) el.coach.querySelector('p').innerHTML = '<b>Swipe</b> to turn pages. <b>Tap a product name</b> for pack sizes and item codes, or anywhere else to zoom in.';
+      if (phone()) el.coach.querySelector('p').innerHTML = '<b>Scroll</b> through the sheets. <b>Tap a product name</b> for pack sizes and item codes, or an item code to copy it. <b>Zoom</b> enlarges the page you are on.';
+      else if (isTouch) el.coach.querySelector('p').innerHTML = '<b>Swipe</b> to turn pages. <b>Tap a product name</b> for pack sizes and item codes, or anywhere else to zoom in.';
       setTimeout(() => { el.coach.hidden = true; store.set('coachSeen', true); }, 14000);
     }
   }

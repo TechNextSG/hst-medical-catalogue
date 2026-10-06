@@ -12,7 +12,8 @@ into a site we own. The reader engine is the one built for the nivellipso catalo
 
 | | |
 |---|---|
-| **Book** | Realistic page curl. Drag from anywhere on a page, swipe, arrow keys or the wheel. Clicking again while a page turns finishes it and starts the next one, so you can riffle. Soft paper sound (on/off in settings). Spreads on desktop, single pages on phones and tall tablets. All pages load up front (no lazy loading). |
+| **Book** | Realistic page curl. Drag from anywhere on a page, swipe, arrow keys or the wheel. Clicking again while a page turns finishes it and starts the next one, so you can riffle. Soft paper sound (on/off in settings). Spreads on desktop, single pages on tall tablets. All pages load up front (no lazy loading). |
+| **Phones** | **Scroll view only** - no flip-book and no view switcher on phones (narrow screens, or a phone held sideways). Book/Pages requests (keys, `&v=` links) open in Scroll. Product names, item codes, index links, search and Zoom all work in the column. Tablets and desktop keep all three views. |
 | **Product cards** | Click a product name on any sheet (or **Product details** in the bar) for its pack sizes and item codes, a link to the product page on the website, and an order e-mail to resellercontact@hstmedical.com. A spread with two products shows both. |
 | **Item codes** | Every printed item code copies itself on click. Search finds all 58 codes; a partial code lists the matches. |
 | **Index page** | Every product line (and category heading) on the "Our Products" back page jumps to its sheet. |
@@ -76,7 +77,7 @@ Local preview: `python -m http.server 3987` in this folder (launch entry `hst-ca
 python tools/run_qa.py http://localhost:3987/ 1440x900 1180x1000 768x1024 390x844
 ```
 
-Runs `HSTQA()` (51 checks on the flip engine, driven frame by frame: cover centring, drags, riffling, sounds, index links,
+Runs `HSTQA()` (on phones: 15 Scroll-only checks instead of the book suite; elsewhere 51 checks on the flip engine, driven frame by frame: cover centring, drags, riffling, sounds, index links,
 item-code copy, product cards, zoom, panel, rail, search) and `HSTQA_UI()` (34 checks through the real controls) in headless
 Chrome at each size. Both can also be pasted into the browser console (`tools/qa_console.js`). They never open an e-mail link or the website.
 `python tools/shoot.py <url> <WxH> <out.png> "<js>"` takes a headless screenshot.

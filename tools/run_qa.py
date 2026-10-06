@@ -51,8 +51,10 @@ def run(base, W, H, port):
                 return {"error": r["exceptionDetails"].get("exception", {}).get("description", str(r["exceptionDetails"]))}
             return r.get("result", {}).get("value")
 
-        mobile = W < 760
+        mobile = W < 760 or H <= 500          # phones, upright or on their side
         call("Emulation.setDeviceMetricsOverride", width=W, height=H, deviceScaleFactor=1, mobile=mobile)
+        if mobile:
+            call("Emulation.setTouchEmulationEnabled", enabled=True, maxTouchPoints=5)
         call("Page.enable")
         call("Runtime.enable")
         call("Page.addScriptToEvaluateOnNewDocument",

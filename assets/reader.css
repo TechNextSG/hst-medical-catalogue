@@ -729,6 +729,24 @@ kbd {
 .pcard__actions .btn--primary { flex: 1 1 auto; justify-content: center; }
 .toc__group--back { margin-top: 10px; }
 
+/* ---------- phones: Scroll view only (the reader adds .phone; no flip-book, no view switcher) ---------- */
+.app.phone .modes { display: none !important; }
+.app.phone .dock { grid-template-columns: auto 1fr auto; }        /* phone on its side: pager | rail | zoom */
+/* phone on its side: little height, so slim bars and icon-only tools leave room for the page */
+@media (min-width: 761px) and (pointer: coarse) and (max-height: 500px) {
+  :root { --bar-h: 54px; --dock-h: 54px; }
+  .bar { gap: 6px; }
+  .brand__logo { height: 32px; }
+  .crumb, .bar__title, .search, .stage__spine { display: none; }
+  .bar__tools { margin-left: auto; }
+  .only-narrow { display: inline-flex !important; }
+  .settings__group.only-narrow { display: block !important; }
+  .hide-narrow { display: none !important; }
+  .cta { height: 38px; }
+  .btn--zoom { height: 38px; }
+  .scroll__col { width: calc(100% - 32px); padding-top: 12px; }
+}
+
 /* ---------- responsive ---------- */
 @media (max-width: 1180px) {
   .crumb { justify-content: flex-start; }
@@ -773,6 +791,9 @@ kbd {
     padding-bottom: max(4px, env(safe-area-inset-bottom));
   }
   .rail { grid-column: 1 / -1; grid-row: 1; height: 40px; margin: 0 4px; }
+  .app.phone .dock { grid-template-columns: 1fr auto 1fr; }
+  .app.phone .pager { grid-column: 2; grid-row: 2; }
+  .app.phone .btn--zoom { grid-column: 3; grid-row: 2; justify-self: end; }
   .rseg__no { display: none; }
   .rseg::before { top: 18px; }
   .rail:hover .rseg::before { top: 17px; }

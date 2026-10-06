@@ -9,6 +9,62 @@ window.HSTQA = async function HSTQA() {
   const results = [];
   const ok = (name, cond, info = '') => results.push({ name, pass: !!cond, info: typeof info === 'string' ? info : JSON.stringify(info) });
   const wait = ms => new Promise(r => setTimeout(r, ms));
+  const $q = sel => document.querySelector(sel);
+  // ---- phones: Scroll view only, every feature still reachable from the scrolling column
+  async function phoneSuite() {
+    const until = async (cond, ms = 4000) => { const t0 = performance.now(); while (!cond() && performance.now() - t0 < ms) await wait(25); return cond(); };
+    await until(() => document.getElementById('loader').hidden, 8000);
+    ok('phone opens in Scroll view', S.view === 'scroll' && !document.getElementById('viewScroll').hidden);
+    ok('no flip-book is built on a phone', !B.built && !B.flip && !$q('.book-root'));
+    ok('the view switcher is hidden', getComputedStyle($q('.modes')).display === 'none');
+    setView('book'); await wait(60);
+    ok('asking for Book view stays in Scroll', S.view === 'scroll' && document.getElementById('viewBook').hidden && !B.built);
+    setView('grid'); await wait(60);
+    ok('asking for the Pages grid stays in Scroll', S.view === 'scroll' && document.getElementById('viewGrid').hidden);
+    ok('the page link carries no view (a shared link opens normally on desktop)', !/v=/.test(location.hash), location.hash);
+    // every page image comes in one size only (no second download of the same page)
+    const res = performance.getEntriesByType('resource').map(e => e.name);
+    const md = new Set(res.filter(u => /book\/md\//.test(u)).map(u => u.match(/(\d{3})\.webp/)[1]));
+    const hi = new Set(res.filter(u => /book\/pages\//.test(u)).map(u => u.match(/(\d{3})\.webp/)[1]));
+    ok('each page image is downloaded in one size only', [...md].every(n => !hi.has(n)), { md: md.size, hi: hi.size });
+    ok('all pages are requested up front (no lazy loading)', md.size + hi.size >= S.N, md.size + hi.size);
+
+    // product card + item code from a sheet in the column
+    goTo(7); await until(() => S.visible.includes(7) && $q('.sheet[data-n="7"] .hs'));
+    const title = [...document.querySelectorAll('.sheet[data-n="7"] .hs')].find(b => S.man.hotspots[+b.dataset.hs].type === 'product');
+    title.click(); await wait(60);
+    const modal = document.getElementById('modal');
+    ok('tapping a product name opens its card', modal.open && modal.querySelectorAll('.pcard__code').length === (S.man.products[7].skus || []).length);
+    modal.close(); await wait(20);
+    const codeBtn = [...document.querySelectorAll('.sheet[data-n="7"] .hs')].find(b => S.man.hotspots[+b.dataset.hs].type === 'code');
+    let copied = null; const realWrite = navigator.clipboard && navigator.clipboard.writeText;
+    try { if (navigator.clipboard) navigator.clipboard.writeText = async t => { copied = t; }; codeBtn.click(); await wait(60); }
+    finally { if (navigator.clipboard && realWrite) navigator.clipboard.writeText = realWrite; }
+    ok('tapping an item code copies it', copied === S.man.hotspots[+codeBtn.dataset.hs].code || /copied/.test(document.getElementById('toast').textContent), copied);
+    ok('the bar button offers product details', /Product details/.test(document.getElementById('ctaLabel').textContent));
+
+    // index page links scroll to the sheet
+    goTo(S.N); await until(() => S.visible.includes(S.N) && $q(`.sheet[data-n="${S.N}"] .hs`));
+    const qz = [...document.querySelectorAll(`.sheet[data-n="${S.N}"] .hs`)].find(b => (S.man.hotspots[+b.dataset.hs].label || '').startsWith('Heritage Qian Li Zhui Feng Oil'));
+    qz.click(); await until(() => S.visible.includes(20));
+    ok('an index line scrolls to its product sheet', S.visible.includes(20), S.visible);
+
+    // zoom the page you are on
+    document.getElementById('btnZoom').click(); await wait(80);
+    ok('Zoom opens the current page', Zoom.open && document.querySelectorAll('#zoomContent .zpage').length === 1);
+    Zoom.close(); await wait(30);
+
+    // search highlights in the column
+    const r = await applyQuery('410323');
+    ok('item-code search finds its sheet', r.length && r[0].n === 3);
+    goTo(3); await until(() => S.visible.includes(3) && $q('.sheet[data-n="3"] .hl'));
+    ok('matches are highlighted on the scrolling page', !!$q('.sheet[data-n="3"] .hl'));
+    await applyQuery('');
+    const f = results.filter(x => !x.pass);
+    console.table(results);
+    return { pass: results.length - f.length, fail: f.length, failed: f, results };
+  }
+  if (document.getElementById('app').classList.contains('phone')) return phoneSuite();
   for (let i = 0; i < 600 && !B.flip; i++) await wait(25);   // boot waits for the opening spread to decode
   const F = () => B.flip, R = () => F().getRender();
   // programmatic presses happen within the same millisecond: bypass the 70 ms key-repeat guard
@@ -237,11 +293,12 @@ window.HSTQA = async function HSTQA() {
   const fails = results.filter(x => !x.pass);
   console.table(results);
   return { pass: results.length - fails.length, fail: fails.length, failed: fails, results };
+
   } finally {
     B.turn = realTurn;
     // the stepped clock ran ahead of real time: keep clamping until real frames catch up, then let go
     const tEnd = t;
-    rd0.render = function (ts) { if (ts >= tEnd) delete this.render; return realRender.call(this, Math.max(ts, tEnd)); };
+    if (rd0) rd0.render = function (ts) { if (ts >= tEnd) delete this.render; return realRender.call(this, Math.max(ts, tEnd)); };
   }
 };
 
@@ -277,8 +334,9 @@ window.HSTQA_UI = async function HSTQA_UI() {
   firstRes.click();
   await until(() => S.visible.includes(firstPage));
   ok('clicking a result opens its page', S.visible.includes(firstPage), firstPage);
-  await until(() => document.querySelectorAll('.book-root .hl').length > 0, 2500);
-  ok('search matches are highlighted on the page', document.querySelectorAll('.book-root .hl').length > 0);
+  const hlSel = S.view === 'book' ? '.book-root .hl' : '.scroll .hl';
+  await until(() => document.querySelectorAll(hlSel).length > 0, 2500);
+  ok('search matches are highlighted on the page', document.querySelectorAll(hlSel).length > 0);
   const input = headerSearch ? $id('q') : $id('q2');
   input.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true, cancelable: true }));
   await until(() => !document.querySelectorAll('.hl').length, 2500);
@@ -337,6 +395,13 @@ window.HSTQA_UI = async function HSTQA_UI() {
   ok('an out-of-range page number goes to the last page', S.visible.includes(S.N), S.visible);
 
   // ---- keyboard
+  const isPhone = app.classList.contains('phone');
+  if (isPhone) {
+    key('1'); await wait(150);
+    ok('phone: 1 (Book) keeps the Scroll view', S.view === 'scroll' && !B.built);
+    key('3'); await wait(150);
+    ok('phone: 3 (Pages) keeps the Scroll view', S.view === 'scroll');
+  } else {
   key('Home'); await until(() => S.visible.includes(1));
   ok('Home goes to the cover', S.visible.includes(1));
   key('End'); await until(() => S.visible.includes(S.N));
@@ -348,6 +413,7 @@ window.HSTQA_UI = async function HSTQA_UI() {
   const tile = document.querySelector('#grid [data-tile="47"]');
   tile.click(); await until(() => S.view === 'book' && S.visible.includes(47));
   ok('a grid tile opens that page in the book', S.view === 'book' && S.visible.includes(47), S.visible);
+  }
   key('z'); await wait(60);
   ok('Z opens zoom', Zoom.open);
   const z0 = Zoom.z; key('+');
